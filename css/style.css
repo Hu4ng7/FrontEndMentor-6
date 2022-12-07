@@ -1,0 +1,112 @@
+html, body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: #0a0c1b;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    display: grid;
+    width:90%;
+    grid-template-columns: 1fr 1fr;
+    margin:5% auto;
+}
+.infos{
+    background-color: #1c1938;
+    width:90%;
+    height:346px;
+    border-radius: 10px 0 0 10px;
+    padding:50px;
+}
+.infos .title{
+    font-size: 35px;
+    color: #fff;
+}
+.infos .title span{
+    color:#9e60cd;
+}
+.infos .description{
+    color:#89879c;
+    font-size: 18px;
+}
+.infos .datas{
+    display: flex;
+    gap:60px;
+    margin-top: 40px;
+}
+.datas .data{
+    color:white;
+}
+.datas .data h3{
+    font-size: 25px;
+}
+.datas .data p{
+    color:#89879c;
+    line-height: 0;
+    font-size: 15px;
+}
+.logo{
+    width:90%;
+    height:445px;
+    background-repeat: no-repeat;
+    background-color: #842fb9;
+    border-radius: 0 10px 10px 0;
+}
+.logo img{
+    width:100%;
+    height:100%;
+    opacity:0.6;
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width:1060px){
+    .container{
+        display: grid;
+        width:50%;
+        grid-template-columns: 1fr;
+        margin:5% auto;
+    }
+    .infos{
+        background-color: #1c1938;
+        width:100%;
+        height:100%;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        padding:0;
+    }
+    .infos .title{
+        font-size: 28px;
+        color: #fff;
+        padding:0 20px;
+    }
+    .infos .title span{
+        color:#9e60cd;
+    }
+    .infos .description{
+        color:#89879c;
+        font-size: 16px;
+        padding:0 20px;
+    }
+    .infos .datas{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        margin-top: 20px;
+        padding:20px;
+    }
+    .logo{
+        grid-row: -1;
+        width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-color: #842fb9;
+        border-radius: 10px 10px 0 0;
+    }
+    .logo img{
+        width:100%;
+        height:100%;
+        opacity:0.6;
+        border-radius: 10px 10px 0 0;
+    }
+}
